@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4efe5" />
+  <title>SmartChef — Sofranın Hikâyesi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SmartChef ana sayfa">
+      <span class="brand-mark">S</span>
+      <span>SmartChef</span>
+    </a>
+    <nav aria-label="Ana menü">
+      <a class="nav-link active" href="#menu">Menü</a>
+      <a class="nav-link" href="#story">Hikâyemiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="story">
+      <div class="hero-copy">
+        <p class="eyebrow">Bugünün sofrası</p>
+        <h1>Her tabakta<br><em>bir hikâye.</em></h1>
+        <p class="intro">Mevsimin en güzelini, en yalın hâliyle sunuyoruz. Bol zamanla pişiriliyor, sevgiyle hazırlanıyor.</p>
+      </div>
+      <div class="hero-art" aria-label="Yemek tabağı görseli">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Mevsim sebzeleriyle hazırlanmış yemek" />
+        <span class="seal">Günlük<br>hazırlanır</span>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="menu-heading">
+        <div>
+          <p class="eyebrow">Mutfaktan</p>
+          <h2>Menü</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Menü kategorileri">
+          <button class="filter active" data-category="all">Hepsi</button>
+          <button class="filter" data-category="başlangıç">Başlangıç</button>
+          <button class="filter" data-category="ana">Ana yemek</button>
+          <button class="filter" data-category="tatlı">Tatlı</button>
+        </div>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </section>
+  </main>
+
+  <dialog id="dishDialog">
+    <button class="dialog-close" aria-label="Pencereyi kapat">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
