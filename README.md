@@ -1,20 +1,20 @@
 # SmartChef Restaurant Menu
 
-Samimi, mevsim odaklı ve duygusal bir restoran menüsü deneyimi.
+A warm, seasonal, and heartfelt restaurant menu experience.
 
-## Çalıştırma
+## Run
 
-Herhangi bir derleme gerektirmez:
+No build step is required:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Sonra `http://localhost:4173` adresini açın.
+Then open `http://localhost:4173`.
 
-## Özellikler
+## Features
 
-- Responsive restoran menüsü
-- Başlangıç, ana yemek ve tatlı kategorileri
-- Her yemek için hikâye içeren detay penceresi
-- Sıcak, elle tutulur bir görsel dil
+- Responsive restaurant menu
+- Starter, main dish, and dessert categories
+- A story for every dish in a detail dialog
+- A warm, inviting visual style
